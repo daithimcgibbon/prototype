@@ -1,4 +1,4 @@
-var config = {
+module.exports = {
   context: __dirname + "/src",
   entry: "./index.js",
 
@@ -23,5 +23,4 @@ var config = {
       }
     ],
   },
-};
-module.exports = config;
+}

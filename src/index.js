@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import HelloWorld from './components/HelloWorld.js'
 
 ReactDOM.render(
-  <h1>Hello World</h1>,
+  <HelloWorld name={'Daithi'} />,
   document.getElementById('app')
 )
