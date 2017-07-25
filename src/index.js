@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HelloWorld from './components/HelloWorld.js'
+import CanvasComponent from './components/CanvasComponent.js'
 
 ReactDOM.render(
-  <HelloWorld name={'Daithi'} />,
+  <CanvasComponent />,
   document.getElementById('app')
 )
