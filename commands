@@ -1,0 +1,19 @@
+npm init
+npm install --save-dev webpack
+npm install --save-dev webpack-dev-server
+npm install --save react react-dom
+npm install --save-dev babel-preset-react babel-preset-es2015 babel-core babel-loader
+npm install --save-dev babel-preset-latest
+npm install --save-dev babel-preset-stage-0
+npm install --save-dev babel-preset-stage-2
+npm install --save-dev mocha chai enzyme
+npm install --save css-loader
+npm install --save style-loader
+npm install --save redux
+
+// create webpack.config.js
+// create folder app
+// create index.js
+// create dist folder for bundle.js
+// create index.html
+// run webpack-dev-server
