@@ -4,7 +4,8 @@ import Osc2 from './osc2/Osc2.js'
 
 export default () => (
   <div>
-      <Osc1 />,
+      <Osc1 />
+      <br />
       <Osc2 />
   </div>
 )

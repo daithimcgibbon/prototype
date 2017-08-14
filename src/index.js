@@ -5,26 +5,19 @@ import initialState from './initialState.json'
 import C from './constants.js'
 import { osc1, osc2 } from './reducers.js'
 import Prophet6 from './components/Prophet6.js'
+import { setOsc1Freq } from './actions.js'
 
 const store = createStore(
   combineReducers( { osc1, osc2 } ),
-  initialState
+  (localStorage['redux-store']) ?
+    JSON.parse(localStorage['redux-store']) :
+    initialState
 )
-// console.log( store.getState() )
 
-store.dispatch({
-  type: C.SET_OSC1_PW,
-  pulseWidth: 55
-})
+store.subscribe(() => localStorage['redux-store'] = JSON.stringify(store.getState()))
+store.subscribe(() => console.log('state', store.getState()) )
 
-// console.log( store.getState() )
-
-store.dispatch({
-  type: C.SET_OSC2_LOW_FREQ,
-  lowFreq: true
-})
-
-console.log( 'udpate=' + store.getState().osc1.pulseWidth )
+// store.dispatch(setOsc1Freq(60))
 
 ReactDOM.render(
   <Prophet6 />,
