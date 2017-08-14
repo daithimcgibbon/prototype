@@ -1,4 +1,4 @@
-import C from './constants.js'
+import C from '../constants.js'
 
 export const osc1 = (state={}, action) => {
   switch(action.type) {
