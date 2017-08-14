@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Prophet6 from './components/Prophet6.js'
+import Prophet6 from './components/Prophet6'
 import storeFactory from './store'
-import { setOsc1Freq, setOsc2Freq } from './actions'
+import { Provider } from 'react-redux'
 
-const store = storeFactory(true)
+const store = storeFactory()
 
 ReactDOM.render(
-  <Prophet6 stateData={store.getState()}/>,
+  <Provider store={store}>
+    <Prophet6 />
+  </Provider>,
   document.getElementById( 'app' )
 )

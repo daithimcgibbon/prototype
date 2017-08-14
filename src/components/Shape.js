@@ -11,9 +11,9 @@ const Shape = ({shape, onSetShape}) => {
   )
 }
 
-Shape.propTypes = {
-  shape: PropTypes.number,
-  onSetShape: PropTypes.func
-}
+// Shape.propTypes = {
+//   shape: PropTypes.number,
+//   onSetShape: PropTypes.func
+// }
 
 export default Shape

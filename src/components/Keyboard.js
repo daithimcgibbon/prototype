@@ -11,9 +11,9 @@ const Keyboard = ({keyboard, onSetKeyboard}) => {
   )
 }
 
-Keyboard.propTypes = {
-  keyboard: PropTypes.bool,
-  onSetKeyboard: PropTypes.func
-}
+// Keyboard.propTypes = {
+//   keyboard: PropTypes.bool,
+//   onSetKeyboard: PropTypes.func
+// }
 
 export default Keyboard

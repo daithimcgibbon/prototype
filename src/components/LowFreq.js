@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const lowFreq = ({lowFreq, onSetLowFreq}) => {
+const LowFreq = ({lowFreq, onSetLowFreq}) => {
   let _lowFreq
   return (
     <div>
@@ -11,9 +11,9 @@ const lowFreq = ({lowFreq, onSetLowFreq}) => {
   )
 }
 
-lowFreq.propTypes = {
-  lowFreq: PropTypes.bool,
-  onSetLowFreq: PropTypes.func
-}
+// LowFreq.propTypes = {
+//   lowFreq: PropTypes.bool,
+//   onSetLowFreq: PropTypes.func
+// }
 
-export default lowFreq
+export default LowFreq

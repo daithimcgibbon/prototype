@@ -1,11 +1,14 @@
 import React from 'react'
-import Osc1 from './Osc1.js'
-import Osc2 from './Osc2.js'
+import Osc1Container from './Osc1Container'
+import Osc2Container from './Osc2Container'
+import PatchSummaryContainer from './PatchSummaryContainer'
 
-export default ({stateData}) => (
+export default () => (
   <div>
-      <Osc1 osc1={stateData.osc1}/>
+      <Osc1Container />
       <br />
-      <Osc2 osc2={stateData.osc2}/>
+      <Osc2Container />
+      <br />
+      <PatchSummaryContainer />
   </div>
 )

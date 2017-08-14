@@ -1,4 +1,4 @@
-import C from './constants.js'
+import C from './constants'
 
 export const setOsc1Freq = (frequency=0) =>
   ({
@@ -33,7 +33,7 @@ export const setOsc2Freq = (frequency=0) =>
 export const setOsc2Fine = (fine=0) =>
   ({
     type: C.SET_OSC2_FINE,
-    sync: fine
+    fine: fine
   })
 
 export const setOsc2Shape = (shape=0) =>

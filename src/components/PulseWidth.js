@@ -11,9 +11,9 @@ const PulseWidth = ({pulseWidth, onSetPulseWidth}) => {
   )
 }
 
-PulseWidth.propTypes = {
-  pulseWidth: PropTypes.number,
-  onSetPulseWidth: PropTypes.func
-}
+// PulseWidth.propTypes = {
+//   pulseWidth: PropTypes.number,
+//   onSetPulseWidth: PropTypes.func
+// }
 
 export default PulseWidth

@@ -11,9 +11,9 @@ const Frequency = ({frequency, onSetFrequency}) => {
   )
 }
 
-Frequency.propTypes = {
-  frequency: PropTypes.number,
-  onSetFrequency: PropTypes.func
-}
+// Frequency.propTypes = {
+//   frequency: PropTypes.number,
+//   onSetFrequency: PropTypes.func
+// }
 
 export default Frequency

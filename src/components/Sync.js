@@ -11,9 +11,9 @@ const Sync = ({sync, onSetSync}) => {
   )
 }
 
-Sync.propTypes = {
-  sync: PropTypes.bool,
-  onSetSync: PropTypes.func
-}
+// Sync.propTypes = {
+//   sync: PropTypes.bool,
+//   onSetSync: PropTypes.func
+// }
 
 export default Sync

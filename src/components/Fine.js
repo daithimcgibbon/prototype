@@ -11,9 +11,9 @@ const Fine = ({fine, onSetFine}) => {
   )
 }
 
-Fine.propTypes = {
-  fine: PropTypes.number,
-  onSetFine: PropTypes.func
-}
+// Fine.propTypes = {
+//   fine: PropTypes.number,
+//   onSetFine: PropTypes.func
+// }
 
 export default Fine
