@@ -11,6 +11,7 @@ npm install --save css-loader
 npm install --save style-loader
 npm install --save redux
 npm install react-redux --save
+sudo npm install -g eslint
 
 // create webpack.config.js
 // create folder app
