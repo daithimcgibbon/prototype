@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Osc1 from './Osc1'
+import Osc1 from '../components/Osc1'
 import { setOsc1Freq, setOsc1Sync, setOsc1Shape, setOSc1PulseWidth } from '../actions'
 
 const Osc1Container = connect(
@@ -9,16 +9,16 @@ const Osc1Container = connect(
     }),
   dispatch =>
     ({
-      setFrequency(frequency) {
+      onSetFrequency(frequency) {
         dispatch(setOsc1Freq(frequency))
       },
-      setSync(sync) {
+      onSetSync(sync) {
         dispatch(setOsc1Sync(sync))
       },
-      setShape(shape) {
+      onSetShape(shape) {
         dispatch(setOsc1Shape(shape))
       },
-      setPulseWidth(pulseWidth) {
+      onSetPulseWidth(pulseWidth) {
         dispatch(setOSc1PulseWidth(pulseWidth))
       }
     })

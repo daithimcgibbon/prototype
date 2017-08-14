@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Osc2 from './Osc2'
+import Osc2 from '../components/Osc2'
 import { setOsc2Freq, setOsc2Fine, setOsc2Shape, setOSc2PulseWidth, setOSc2LowFreq, setOSc2Keyboard } from '../actions'
 
 const Osc2Container = connect(
@@ -9,23 +9,23 @@ const Osc2Container = connect(
     }),
   dispatch =>
     ({
-      setFrequency(frequency) {
+      onSetFrequency(frequency) {
         dispatch(setOsc2Freq(frequency))
       },
-      setFine(fine) {
+      onSetFine(fine) {
         console.log('container fine: ' + fine)
         dispatch(setOsc2Fine(fine))
       },
-      setShape(shape) {
+      onSetShape(shape) {
         dispatch(setOsc2Shape(shape))
       },
-      setPulseWidth(pulseWidth) {
+      onSetPulseWidth(pulseWidth) {
         dispatch(setOSc2PulseWidth(pulseWidth))
       },
-      setLowFreq(lowFreq) {
+      onSetLowFreq(lowFreq) {
         dispatch(setOSc2LowFreq(lowFreq))
       },
-      setKeyboard(keyboard) {
+      onSetKeyboard(keyboard) {
         dispatch(setOSc2Keyboard(keyboard))
       }
     })

@@ -12,5 +12,12 @@
 		"pulseWidth": 0,
 		"lowFreq": false,
 		"keyboard": false
+	},
+	"slop": 0,
+	"mixer": {
+		"mixerOsc1": 0,
+		"mixerOsc2": 0,
+		"subOctave": 0,
+		"noise": 0
 	}
 }

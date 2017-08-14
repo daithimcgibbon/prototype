@@ -8,15 +8,15 @@ import Keyboard from './Keyboard'
 
 export default (props) => {
   const { frequency, fine, shape, pulseWidth, lowFreq, keyboard } = props.osc2
-  const { setFrequency, setFine, setShape, setPulseWidth, setLowFreq, setKeyboard } = props
+  const { onSetFrequency, onSetFine, onSetShape, onSetPulseWidth, onSetLowFreq, onSetKeyboard } = props
   return (
     <div>
-      <Frequency frequency={frequency} onSetFrequency={setFrequency} />
-      <Fine fine={fine} onSetFine={setFine} />
-      <Shape shape={shape} onSetShape={setShape} />
-      <PulseWidth pulseWidth={pulseWidth} onSetPulseWidth={setPulseWidth} />
-      <LowFreq lowFreq={lowFreq} onSetLowFreq={setLowFreq} />
-      <Keyboard keyboard={keyboard} onSetKeyboard={setKeyboard} />
+      <Frequency frequency={frequency} onSetFrequency={onSetFrequency} />
+      <Fine fine={fine} onSetFine={onSetFine} />
+      <Shape shape={shape} onSetShape={onSetShape} />
+      <PulseWidth pulseWidth={pulseWidth} onSetPulseWidth={onSetPulseWidth} />
+      <LowFreq lowFreq={lowFreq} onSetLowFreq={onSetLowFreq} />
+      <Keyboard keyboard={keyboard} onSetKeyboard={onSetKeyboard} />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Prophet6 from './components/Prophet6'
+import Prophet6 from './Prophet6'
 import storeFactory from './store'
 import { Provider } from 'react-redux'
 

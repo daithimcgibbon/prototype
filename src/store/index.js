@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
-import { osc1, osc2 } from './reducers'
+import { osc1, osc2, slop, mixer } from './reducers'
 import stateData from './initialState'
 
 const logger = store => next => action => {
@@ -14,15 +14,15 @@ const logger = store => next => action => {
 
 const saver = store => next => action => {
     let result = next(action)
-    localStorage['redux-store'] = JSON.stringify(store.getState())
+    localStorage['prophet6-store'] = JSON.stringify(store.getState())
     return result
 }
 
 const storeFactory = (initialState=stateData) =>
     applyMiddleware(logger, saver)(createStore)(
-        combineReducers({osc1, osc2}),
-        (localStorage['redux-store']) ?
-            JSON.parse(localStorage['redux-store']) :
+        combineReducers({osc1, osc2, slop, mixer}),
+        (localStorage['prophet6-store']) ?
+            JSON.parse(localStorage['prophet6-store']) :
             stateData
     )
 

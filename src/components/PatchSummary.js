@@ -19,6 +19,17 @@ const PatchSummary = ({stateData}) => (
         <li><b>Low Freq: </b>{(stateData.osc2.lowFreq) ? 'true' : 'false'}</li>
         <li><b>Keyboard: </b>{(stateData.osc2.keyboard) ? 'true' : 'false'}</li>
       </ul>
+      <h4>Slop</h4>
+      <ul>
+        <li><b>Slop: </b>{stateData.slop}</li>
+      </ul>
+      <h4>Mixer</h4>
+      <ul>
+        <li><b>Osc 1: </b>{stateData.mixer.mixerOsc1}</li>
+        <li><b>Osc 2: </b>{stateData.mixer.mixerOsc2}</li>
+        <li><b>Sub Octave: </b>{stateData.mixer.subOctave}</li>
+        <li><b>Noise: </b>{stateData.mixer.noise}</li>
+      </ul>
   </div>
 )
 

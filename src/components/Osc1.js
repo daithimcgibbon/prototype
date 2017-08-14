@@ -6,13 +6,13 @@ import PulseWidth from './PulseWidth'
 
 export default (props) => {
   const { frequency, sync, shape, pulseWidth } = props.osc1
-  const { setFrequency, setSync, setShape, setPulseWidth } = props
+  const { onSetFrequency, onSetSync, onSetShape, onSetPulseWidth } = props
   return (
     <div>
-      <Frequency frequency={frequency} onSetFrequency={setFrequency} />
-      <Sync sync={sync} onSetSync={setSync} />
-      <Shape shape={shape} onSetShape={setShape} />
-      <PulseWidth pulseWidth={pulseWidth} onSetPulseWidth={setPulseWidth} />
+      <Frequency frequency={frequency} onSetFrequency={onSetFrequency} />
+      <Sync sync={sync} onSetSync={onSetSync} />
+      <Shape shape={shape} onSetShape={onSetShape} />
+      <PulseWidth pulseWidth={pulseWidth} onSetPulseWidth={onSetPulseWidth} />
     </div>
   )
 }

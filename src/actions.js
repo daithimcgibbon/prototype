@@ -59,3 +59,33 @@ export const setOSc2Keyboard = (keyboard=false) =>
     type: C.SET_OSC2_KEYBOARD,
     keyboard: keyboard
   })
+
+export const setSlop = (slop=0) =>
+  ({
+    type: C.SET_SLOP,
+    slop: slop
+  })
+
+export const setMixerOsc1 = (mixerOsc1=0) =>
+  ({
+    type: C.SET_MIXER_OSC1,
+    mixerOsc1: mixerOsc1
+  })
+
+export const setMixerOsc2 = (mixerOsc2=0) =>
+  ({
+    type: C.SET_MIXER_OSC2,
+    mixerOsc2: mixerOsc2
+  })
+
+export const setMixerSubOctave = (subOctave=0) =>
+  ({
+    type: C.SET_MIXER_SUB_OCTAVE,
+    subOctave: subOctave
+  })
+
+export const setMixerNoise = (noise=0) =>
+  ({
+    type: C.SET_MIXER_NOISE,
+    noise: noise
+  })

@@ -63,3 +63,39 @@ export const osc2 = (state={}, action) => {
       return state
   }
 }
+
+export const slop = (state={}, action) => {
+  switch(action.type) {
+    case C.SET_SLOP:
+      return action.slop
+    default:
+      return state
+  }
+}
+
+export const mixer = (state={}, action) => {
+  switch(action.type) {
+    case C.SET_MIXER_OSC1:
+      return {
+        ...state,
+        mixerOsc1: action.mixerOsc1
+      }
+    case C.SET_MIXER_OSC2:
+      return {
+        ...state,
+        mixerOsc2: action.mixerOsc2
+      }
+    case C.SET_MIXER_SUB_OCTAVE:
+      return {
+        ...state,
+        subOctave: action.subOctave
+      }
+    case C.SET_MIXER_NOISE:
+      return {
+        ...state,
+        noise: action.noise
+      }
+    default:
+      return state
+  }
+}
