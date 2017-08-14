@@ -5,7 +5,7 @@ var expect = require('chai').expect
 
 describe('when using constants', () => {
     it('should equal expected values', () => {
-        expect("SET_OSC1_FREQ").eql("SET_OSC1_FREQ")
+        expect(C.SET_OSC1_FREQ).eql("SET_OSC1_FREQ")
         expect("SET_OSC1_SYNC").eql("SET_OSC1_SYNC")
         expect("SET_OSC1_SHAPE").eql("SET_OSC1_SHAPE")
         expect("SET_OSC1_PW").eql("SET_OSC1_PW")

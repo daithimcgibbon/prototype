@@ -12,6 +12,9 @@ npm install --save style-loader
 npm install --save redux
 npm install react-redux --save
 sudo npm install -g eslint
+sudo npm install -g jest
+npm install --save-dev babel-jest
+npm install deep-freeze --save-dev
 
 // create webpack.config.js
 // create folder app
