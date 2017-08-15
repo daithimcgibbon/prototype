@@ -6,6 +6,7 @@ import SlopContainer from './containers/SlopContainer'
 import MixerContainer from './containers/MixerContainer'
 import HighPassFilterContainer from './containers/HighPassFilterContainer'
 import LowPassFilterContainer from './containers/LowPassFilterContainer'
+import SaveButtonContainer from './containers/SaveButtonContainer'
 
 export default () => (
   <div>
@@ -26,6 +27,8 @@ export default () => (
             <SlopContainer />
             <br />
             <LowPassFilterContainer />
+            <br />
+            <SaveButtonContainer />
           </td>
         </tr>
       </tbody>
