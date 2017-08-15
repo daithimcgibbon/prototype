@@ -9,18 +9,27 @@ import LowPassFilterContainer from './containers/LowPassFilterContainer'
 
 export default () => (
   <div>
-      <Osc1Container />
-      <br />
-      <Osc2Container />
-      <br />
-      <SlopContainer />
-      <br />
-      <MixerContainer />
-      <br />
-      <HighPassFilterContainer />
-      <br />
-      <LowPassFilterContainer />
-      <br />
-      <PatchSummaryContainer />
+    <table width='100%'>
+      <tbody>
+        <tr>
+          <td>
+            <Osc1Container />
+            <br />
+            <MixerContainer />
+          </td>
+          <td>
+            <Osc2Container />
+            <br />
+            <HighPassFilterContainer />
+          </td>
+          <td>
+            <SlopContainer />
+            <br />
+            <LowPassFilterContainer />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <PatchSummaryContainer />
   </div>
 )
