@@ -30,6 +30,26 @@ const PatchSummary = ({stateData}) => (
         <li><b>Sub Octave: </b>{stateData.mixer.subOctave}</li>
         <li><b>Noise: </b>{stateData.mixer.noise}</li>
       </ul>
+      <h4>High Pass Filter</h4>
+      <ul>
+        <li><b>Cutoff: </b> {stateData.highpassfilter.cutoff}</li>
+        <li><b>Resonance: </b> {stateData.highpassfilter.resonance}</li>
+        <li><b>EnvAmount: </b> {stateData.highpassfilter.envAmount}</li>
+        <li><b>Velocity: </b>{(stateData.highpassfilter.velocity) ? 'true' : 'false'}</li>
+        <li><b>Keyboard: </b>{(stateData.highpassfilter.keyboard) ? 'true' : 'false'}</li>
+        <li><b>Half: </b>{(stateData.highpassfilter.half) ? 'true' : 'false'}</li>
+        <li><b>Full: </b>{(stateData.highpassfilter.full) ? 'true' : 'false'}</li>
+      </ul>
+      <h4>Low Pass Filter</h4>
+      <ul>
+        <li><b>Cutoff: </b> {stateData.lowpassfilter.cutoff}</li>
+        <li><b>Resonance: </b> {stateData.lowpassfilter.resonance}</li>
+        <li><b>EnvAmount: </b> {stateData.lowpassfilter.envAmount}</li>
+        <li><b>Velocity: </b>{(stateData.lowpassfilter.velocity) ? 'true' : 'false'}</li>
+        <li><b>Keyboard: </b>{(stateData.lowpassfilter.keyboard) ? 'true' : 'false'}</li>
+        <li><b>Half: </b>{(stateData.lowpassfilter.half) ? 'true' : 'false'}</li>
+        <li><b>Full: </b>{(stateData.lowpassfilter.full) ? 'true' : 'false'}</li>
+      </ul>
   </div>
 )
 

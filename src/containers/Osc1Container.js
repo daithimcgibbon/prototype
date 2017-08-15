@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Osc1 from '../components/Osc1'
+import Osc1 from '../components/oscillators/Osc1'
 import { setOsc1Freq, setOsc1Sync, setOsc1Shape, setOSc1PulseWidth } from '../actions'
 
 const Osc1Container = connect(

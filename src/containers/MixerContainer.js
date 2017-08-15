@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Mixer from '../components/Mixer'
+import Mixer from '../components/mixer/Mixer'
 import { setMixerOsc1, setMixerOsc2, setMixerSubOctave, setMixerNoise } from '../actions'
 
 const MixerContainer = connect(

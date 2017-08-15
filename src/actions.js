@@ -89,3 +89,87 @@ export const setMixerNoise = (noise=0) =>
     type: C.SET_MIXER_NOISE,
     noise: noise
   })
+
+export const setHighPassCutoff = (cutoff=0) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_CUTOFF,
+    cutoff: cutoff
+  })
+
+export const setHighPassResonance = (resonance=0) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_RESONANCE,
+    resonance: resonance
+  })
+
+export const setHighPassEnvAmount = (envAmount=0) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_ENV_AMOUNT,
+    envAmount: envAmount
+  })
+
+export const setHighPassVelocity = (velocity=false) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_VELOCITY,
+    velocity: velocity
+  })
+
+export const setHighPassKeyboard = (keyboard=false) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_KEYBOARD,
+    keyboard: keyboard
+  })
+
+export const setHighPassHalf = (half=false) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_HALF,
+    half: half
+  })
+
+export const setHighPassFull = (full=false) =>
+  ({
+    type: C.SET_HIGHPASSFILTER_FULL,
+    full: full
+  })
+
+export const setLowPassCutoff = (cutoff=0) =>
+  ({
+    type: C.SET_LOWPASSFILTER_CUTOFF,
+    cutoff: cutoff
+  })
+
+export const setLowPassResonance = (resonance=0) =>
+  ({
+    type: C.SET_LOWPASSFILTER_RESONANCE,
+    resonance: resonance
+  })
+
+export const setLowPassEnvAmount = (envAmount=0) =>
+  ({
+    type: C.SET_LOWPASSFILTER_ENV_AMOUNT,
+    envAmount: envAmount
+  })
+
+export const setLowPassVelocity = (velocity=false) =>
+  ({
+    type: C.SET_LOWPASSFILTER_VELOCITY,
+    velocity: velocity
+  })
+
+export const setLowPassKeyboard = (keyboard=false) =>
+  ({
+    type: C.SET_LOWPASSFILTER_KEYBOARD,
+    keyboard: keyboard
+  })
+
+export const setLowPassHalf = (half=false) =>
+  ({
+    type: C.SET_LOWPASSFILTER_HALF,
+    half: half
+  })
+
+export const setLowPassFull = (full=false) =>
+  ({
+    type: C.SET_LOWPASSFILTER_FULL,
+    full: full
+  })

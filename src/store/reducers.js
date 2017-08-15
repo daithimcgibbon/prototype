@@ -64,7 +64,7 @@ export const osc2 = (state={}, action) => {
   }
 }
 
-export const slop = (state={}, action) => {
+export const slop = (state=0, action) => {
   switch(action.type) {
     case C.SET_SLOP:
       return action.slop
@@ -94,6 +94,90 @@ export const mixer = (state={}, action) => {
       return {
         ...state,
         noise: action.noise
+      }
+    default:
+      return state
+  }
+}
+
+export const highpassfilter = (state={}, action) => {
+  switch(action.type) {
+    case C.SET_HIGHPASSFILTER_CUTOFF:
+      return {
+        ...state,
+        cutoff: action.cutoff
+      }
+    case C.SET_HIGHPASSFILTER_RESONANCE:
+      return {
+        ...state,
+        resonance: action.resonance
+      }
+    case C.SET_HIGHPASSFILTER_ENV_AMOUNT:
+      return {
+        ...state,
+        envAmount: action.envAmount
+      }
+    case C.SET_HIGHPASSFILTER_VELOCITY:
+      return {
+        ...state,
+        velocity: action.velocity
+      }
+    case C.SET_HIGHPASSFILTER_KEYBOARD:
+      return {
+        ...state,
+        keyboard: action.keyboard
+      }
+    case C.SET_HIGHPASSFILTER_HALF:
+      return {
+        ...state,
+        half: action.half
+      }
+    case C.SET_HIGHPASSFILTER_FULL:
+      return {
+        ...state,
+        full: action.full
+      }
+    default:
+      return state
+  }
+}
+
+export const lowpassfilter = (state={}, action) => {
+  switch(action.type) {
+    case C.SET_LOWPASSFILTER_CUTOFF:
+      return {
+        ...state,
+        cutoff: action.cutoff
+      }
+    case C.SET_LOWPASSFILTER_RESONANCE:
+      return {
+        ...state,
+        resonance: action.resonance
+      }
+    case C.SET_LOWPASSFILTER_ENV_AMOUNT:
+      return {
+        ...state,
+        envAmount: action.envAmount
+      }
+    case C.SET_LOWPASSFILTER_VELOCITY:
+      return {
+        ...state,
+        velocity: action.velocity
+      }
+    case C.SET_LOWPASSFILTER_KEYBOARD:
+      return {
+        ...state,
+        keyboard: action.keyboard
+      }
+    case C.SET_LOWPASSFILTER_HALF:
+      return {
+        ...state,
+        half: action.half
+      }
+    case C.SET_LOWPASSFILTER_FULL:
+      return {
+        ...state,
+        full: action.full
       }
     default:
       return state

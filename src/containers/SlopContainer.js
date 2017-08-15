@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import Slop from '../components/Slop'
+import Slop from '../components/slop/Slop'
 import { setSlop } from '../actions'
 
 const SlopContainer = connect(
@@ -9,7 +9,7 @@ const SlopContainer = connect(
     }),
   dispatch =>
     ({
-      onSetSlop(slop) {
+      onSetSlop(slop) {s
         dispatch(setSlop(slop))
       }
     })

@@ -19,5 +19,23 @@
 		"mixerOsc2": 0,
 		"subOctave": 0,
 		"noise": 0
+	},
+	"highpassfilter": {
+		"cutoff": 0,
+		"resonance": 0,
+		"envAmount": 0,
+		"velocity": false,
+		"keyboard": false,
+		"half": false,
+		"full": false
+	},
+	"lowpassfilter": {
+		"cutoff": 0,
+		"resonance": 0,
+		"envAmount": 0,
+		"velocity": false,
+		"keyboard": false,
+		"half": false,
+		"full": false
 	}
 }

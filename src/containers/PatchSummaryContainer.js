@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import PatchSummary from '../components/PatchSummary'
+import PatchSummary from '../components/summary/PatchSummary'
 
 const PatchSummaryContainer = connect(
   state =>
