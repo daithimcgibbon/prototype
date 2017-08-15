@@ -6,9 +6,14 @@ const Half = ({half, onSetHalf}) => {
   return (
     <div>
       <input defaultValue={half} ref={(input) => _half = input} />
-      <button onClick={() => onSetHalf(_half.value)}>Set Half</button>
+      <button onClick={() => onSetHalf(_half.value === 'true')}>Set Half</button>
     </div>
   )
+}
+
+Half.propTypes = {
+  half: PropTypes.bool,
+  onSetHalf: PropTypes.func
 }
 
 export default Half

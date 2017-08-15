@@ -6,9 +6,14 @@ const Full = ({full, onSetFull}) => {
   return (
     <div>
       <input defaultValue={full} ref={(input) => _full = input} />
-      <button onClick={() => onSetFull(_full.value)}>Set Full</button>
+      <button onClick={() => onSetFull(_full.value === 'true')}>Set Full</button>
     </div>
   )
+}
+
+Full.propTypes = {
+  full: PropTypes.bool,
+  onSetFull: PropTypes.func
 }
 
 export default Full

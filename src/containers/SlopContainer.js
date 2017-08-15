@@ -9,7 +9,7 @@ const SlopContainer = connect(
     }),
   dispatch =>
     ({
-      onSetSlop(slop) {s
+      onSetSlop(slop) {
         dispatch(setSlop(slop))
       }
     })

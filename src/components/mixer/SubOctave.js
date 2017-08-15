@@ -6,9 +6,14 @@ const SubOctave = ({subOctave, onSetMixerSubOctave}) => {
   return (
     <div>
       <input defaultValue={subOctave} ref={(input) => _subOctave = input} />
-      <button onClick={() => onSetMixerSubOctave(_subOctave.value)}>Set Sub Octave</button>
+      <button onClick={() => onSetMixerSubOctave(parseInt(_subOctave.value))}>Set Sub Octave</button>
     </div>
   )
+}
+
+SubOctave.propTypes = {
+  subOctave: PropTypes.number,
+  onSetMixerSubOctave: PropTypes.func
 }
 
 export default SubOctave

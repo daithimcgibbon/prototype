@@ -6,14 +6,14 @@ const PulseWidth = ({pulseWidth, onSetPulseWidth}) => {
   return (
     <div>
       <input defaultValue={pulseWidth} ref={(input) => _pulseWidth = input} />
-      <button onClick={() => onSetPulseWidth(_pulseWidth.value)}>Set Pulse Width</button>
+      <button onClick={() => onSetPulseWidth(parseInt(_pulseWidth.value))}>Set Pulse Width</button>
     </div>
   )
 }
 
-// PulseWidth.propTypes = {
-//   pulseWidth: PropTypes.number,
-//   onSetPulseWidth: PropTypes.func
-// }
+PulseWidth.propTypes = {
+  pulseWidth: PropTypes.number,
+  onSetPulseWidth: PropTypes.func
+}
 
 export default PulseWidth

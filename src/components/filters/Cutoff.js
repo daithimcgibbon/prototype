@@ -6,9 +6,14 @@ const Cutoff = ({cutoff, onSetCutoff}) => {
   return (
     <div>
       <input defaultValue={cutoff} ref={(input) => _cutoff = input} />
-      <button onClick={() => onSetCutoff(_cutoff.value)}>Set Cutoff</button>
+      <button onClick={() => onSetCutoff(parseInt(_cutoff.value))}>Set Cutoff</button>
     </div>
   )
+}
+
+Cutoff.propTypes = {
+  cutoff: PropTypes.number,
+  onSetCutoff: PropTypes.func
 }
 
 export default Cutoff

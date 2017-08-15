@@ -6,14 +6,14 @@ const Sync = ({sync, onSetSync}) => {
   return (
     <div>
       <input defaultValue={sync} ref={(input) => _sync = input} />
-      <button onClick={() => onSetSync(_sync.value)}>Set Sync</button>
+      <button onClick={() => onSetSync(_sync.value === 'true')}>Set Sync</button>
     </div>
   )
 }
 
-// Sync.propTypes = {
-//   sync: PropTypes.bool,
-//   onSetSync: PropTypes.func
-// }
+Sync.propTypes = {
+  sync: PropTypes.bool,
+  onSetSync: PropTypes.func
+}
 
 export default Sync

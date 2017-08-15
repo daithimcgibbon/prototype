@@ -6,9 +6,14 @@ const Velocity = ({velocity, onSetVelocity}) => {
   return (
     <div>
       <input defaultValue={velocity} ref={(input) => _velocity = input} />
-      <button onClick={() => onSetVelocity(_velocity.value)}>Set Velocity</button>
+      <button onClick={() => onSetVelocity(_velocity.value === 'true')}>Set Velocity</button>
     </div>
   )
+}
+
+Velocity.propTypes = {
+  velocity: PropTypes.bool,
+  onSetVelocity: PropTypes.func
 }
 
 export default Velocity

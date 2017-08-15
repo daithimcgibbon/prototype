@@ -6,14 +6,14 @@ const Frequency = ({frequency, onSetFrequency}) => {
   return (
     <div>
       <input defaultValue={frequency} ref={ (input) => _frequency = input}/>
-      <button onClick={() => onSetFrequency(_frequency.value)}>Set Frequency</button>
+      <button onClick={() => onSetFrequency(parseInt(_frequency.value))}>Set Frequency</button>
     </div>
   )
 }
 
-// Frequency.propTypes = {
-//   frequency: PropTypes.number,
-//   onSetFrequency: PropTypes.func
-// }
+Frequency.propTypes = {
+  frequency: PropTypes.number,
+  onSetFrequency: PropTypes.func
+}
 
 export default Frequency

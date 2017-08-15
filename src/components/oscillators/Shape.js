@@ -6,14 +6,14 @@ const Shape = ({shape, onSetShape}) => {
   return (
     <div>
       <input defaultValue={shape} ref={(input) => _shape = input} />
-      <button onClick={() => onSetShape(_shape.value)}>Set Shape</button>
+      <button onClick={() => onSetShape(parseInt(_shape.value))}>Set Shape</button>
     </div>
   )
 }
 
-// Shape.propTypes = {
-//   shape: PropTypes.number,
-//   onSetShape: PropTypes.func
-// }
+Shape.propTypes = {
+  shape: PropTypes.number,
+  onSetShape: PropTypes.func
+}
 
 export default Shape

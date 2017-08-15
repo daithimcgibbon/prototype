@@ -6,14 +6,14 @@ const LowFreq = ({lowFreq, onSetLowFreq}) => {
   return (
     <div>
       <input defaultValue={lowFreq} ref={(input) => _lowFreq = input} />
-      <button onClick={() => onSetLowFreq(_lowFreq.value)}>Set Low Freq</button>
+      <button onClick={() => onSetLowFreq(_lowFreq.value === 'true')}>Set Low Freq</button>
     </div>
   )
 }
 
-// LowFreq.propTypes = {
-//   lowFreq: PropTypes.bool,
-//   onSetLowFreq: PropTypes.func
-// }
+LowFreq.propTypes = {
+  lowFreq: PropTypes.bool,
+  onSetLowFreq: PropTypes.func
+}
 
 export default LowFreq

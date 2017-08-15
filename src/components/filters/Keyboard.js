@@ -6,9 +6,14 @@ const Keyboard = ({keyboard, onSetKeyboard}) => {
   return (
     <div>
       <input defaultValue={keyboard} ref={(input) => _keyboard = input} />
-      <button onClick={() => onSetKeyboard(_keyboard.value)}>Set Keyboard</button>
+      <button onClick={() => onSetKeyboard(_keyboard.value === 'true')}>Set Keyboard</button>
     </div>
   )
+}
+
+Keyboard.propTypes = {
+  keyboard: PropTypes.bool,
+  onSetKeyboard: PropTypes.func
 }
 
 export default Keyboard

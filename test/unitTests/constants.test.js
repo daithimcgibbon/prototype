@@ -3,7 +3,7 @@ import C from '../../src/constants'
 describe('constants', () => {
 
   it('should 10 strings', () => {
-    expect(Object.keys(C).length).toEqual(15)
+    expect(Object.keys(C).length).toEqual(29)
   })
 
   it('should contain correct values', () => {
@@ -23,6 +23,13 @@ describe('constants', () => {
     expect(constantArray[12]).toEqual("SET_MIXER_OSC2")
     expect(constantArray[13]).toEqual("SET_MIXER_SUB_OCTAVE")
     expect(constantArray[14]).toEqual("SET_MIXER_NOISE")
+    expect(constantArray[15]).toEqual("SET_HIGHPASSFILTER_CUTOFF")
+    expect(constantArray[16]).toEqual("SET_HIGHPASSFILTER_RESONANCE")
+    expect(constantArray[17]).toEqual("SET_HIGHPASSFILTER_ENV_AMOUNT")
+    expect(constantArray[18]).toEqual("SET_HIGHPASSFILTER_VELOCITY")
+    expect(constantArray[19]).toEqual("SET_HIGHPASSFILTER_KEYBOARD")
+    expect(constantArray[20]).toEqual("SET_HIGHPASSFILTER_HALF")
+    expect(constantArray[21]).toEqual("SET_HIGHPASSFILTER_FULL")
   })
 
 })
