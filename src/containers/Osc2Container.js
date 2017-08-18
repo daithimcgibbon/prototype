@@ -20,13 +20,13 @@ const Osc2Container = connect(
         dispatch(setOsc2Shape(shape))
       },
       onSetPulseWidth(pulseWidth) {
-        dispatch(setOSc2PulseWidth(pulseWidth))
+        dispatch(setOsc2PulseWidth(pulseWidth))
       },
       onSetLowFreq(lowFreq) {
-        dispatch(setOSc2LowFreq(lowFreq))
+        dispatch(setOsc2LowFreq(lowFreq))
       },
       onSetKeyboard(keyboard) {
-        dispatch(setOSc2Keyboard(keyboard))
+        dispatch(setOsc2Keyboard(keyboard))
       }
     })
 )(Osc2)

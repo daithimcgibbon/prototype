@@ -42,19 +42,19 @@ export const setOsc2Shape = (shape=0) =>
     shape: shape
   })
 
-export const setOSc2PulseWidth = (pulseWidth=0) =>
+export const setOsc2PulseWidth = (pulseWidth=0) =>
   ({
     type: C.SET_OSC2_PW,
     pulseWidth: pulseWidth
   })
 
-export const setOSc2LowFreq = (lowFreq=false) =>
+export const setOsc2LowFreq = (lowFreq=false) =>
   ({
     type: C.SET_OSC2_LOW_FREQ,
     lowFreq: lowFreq
   })
 
-export const setOSc2Keyboard = (keyboard=false) =>
+export const setOsc2Keyboard = (keyboard=false) =>
   ({
     type: C.SET_OSC2_KEYBOARD,
     keyboard: keyboard
