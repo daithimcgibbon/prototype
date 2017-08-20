@@ -16,6 +16,7 @@ sudo npm install -g jest
 npm install --save-dev babel-jest
 npm install deep-freeze --save-dev
 npm install enzyme react-addons-test-utils --save-dev
+npm i --save-dev react-test-renderer
 
 // create webpack.config.js
 // create folder app

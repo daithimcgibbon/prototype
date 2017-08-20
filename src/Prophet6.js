@@ -9,30 +9,35 @@ import LowPassFilterContainer from './containers/LowPassFilterContainer'
 import SaveButtonContainer from './containers/SaveButtonContainer'
 
 export default () => (
-  <div>
-    <table width='100%'>
-      <tbody>
-        <tr>
-          <td>
-            <Osc1Container />
-            <br />
-            <MixerContainer />
-          </td>
-          <td>
-            <Osc2Container />
-            <br />
-            <HighPassFilterContainer />
-          </td>
-          <td>
-            <SlopContainer />
-            <br />
-            <LowPassFilterContainer />
-            <br />
-            <SaveButtonContainer />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div className='container'>
+    <br />
+    <br />
+    <div className="row">
+      <div className="col-md-4">
+        <Osc1Container />
+      </div>
+      <div className="col-md-4">
+        <Osc2Container />
+      </div>
+      <div className="col-md-4">
+<       MixerContainer />
+      </div>
+    </div>
+    <br />
+    <br />
+    <div className="row">
+      <div className="col-md-4">
+         <HighPassFilterContainer />
+      </div>
+      <div className="col-md-4">
+        <LowPassFilterContainer />
+      </div>
+      <div className="col-md-4">
+        <SlopContainer />
+      </div>
+    </div>
+    <br />
+    <br />
     <PatchSummaryContainer />
   </div>
 )
