@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setLowPassCutoff, setLowPassResonance, setLowPassEnvAmount, setLowPassVelocity, setLowPassKeyboard, setLowPassHalf, setLowPassFull } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setLowPassCutoff, setLowPassResonance, setLowPassEnvAmount, setLowPassVelocity, setLowPassKeyboard, setLowPassHalf, setLowPassFull } from '../../../src/actions'
 
 describe("Low Pass Filter Action Creators", () => {
 

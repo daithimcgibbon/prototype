@@ -1,5 +1,5 @@
 import { shallow, mount } from 'enzyme'
-import Osc1 from '../../../../src/components/oscillators/Osc1'
+import Osc1 from '../../../src/components/oscillators/Osc1'
 
 describe("Osc1", () => {
 

@@ -1,5 +1,5 @@
 import { shallow, mount } from 'enzyme'
-import Slop from '../../../../src/components/slop/Slop'
+import Slop from '../../../src/components/slop/Slop'
 
 describe("Slop", () => {
 

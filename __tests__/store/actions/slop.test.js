@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setSlop } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setSlop } from '../../../src/actions'
 
 describe("Slop Action Creators", () => {
 

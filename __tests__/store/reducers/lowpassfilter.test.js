@@ -1,5 +1,5 @@
-import C from '../../../../src/constants'
-import { highpassfilter } from '../../../../src/store/reducers'
+import C from '../../../src/constants'
+import { lowpassfilter } from '../../../src/store/reducers'
 import deepFreeze from 'deep-freeze'
 
 const state = {
@@ -14,15 +14,15 @@ const state = {
 
 deepFreeze(state)
 
-describe('highpassfilter reducer', () => {
+describe('lowpassfilter reducer', () => {
 
-  it('SET_HIGHPASSFILTER_CUTOFF success', () => {
+  it('SET_LOWPASSFILTER_CUTOFF success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_CUTOFF,
+      type: C.SET_LOWPASSFILTER_CUTOFF,
       cutoff: 10
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 10,
       resonance: 0,
       envAmount: 0,
@@ -33,13 +33,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_RESONANCE success', () => {
+  it('SET_LOWPASSFILTER_RESONANCE success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_RESONANCE,
+      type: C.SET_LOWPASSFILTER_RESONANCE,
       resonance: 20
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 20,
       envAmount: 0,
@@ -50,13 +50,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_ENV_AMOUNT success', () => {
+  it('SET_LOWPASSFILTER_ENV_AMOUNT success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_ENV_AMOUNT,
+      type: C.SET_LOWPASSFILTER_ENV_AMOUNT,
       envAmount: 30
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 0,
       envAmount: 30,
@@ -67,13 +67,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_VELOCITY success', () => {
+  it('SET_LOWPASSFILTER_VELOCITY success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_VELOCITY,
+      type: C.SET_LOWPASSFILTER_VELOCITY,
       velocity: true
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 0,
       envAmount: 0,
@@ -84,13 +84,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_KEYBOARD success', () => {
+  it('SET_LOWPASSFILTER_KEYBOARD success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_KEYBOARD,
+      type: C.SET_LOWPASSFILTER_KEYBOARD,
       keyboard: true
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 0,
       envAmount: 0,
@@ -101,13 +101,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_HALF success', () => {
+  it('SET_LOWPASSFILTER_HALF success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_HALF,
+      type: C.SET_LOWPASSFILTER_HALF,
       half: true
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 0,
       envAmount: 0,
@@ -118,13 +118,13 @@ describe('highpassfilter reducer', () => {
     })
   })
 
-  it('SET_HIGHPASSFILTER_FULL success', () => {
+  it('SET_LOWPASSFILTER_FULL success', () => {
     const action = {
-      type: C.SET_HIGHPASSFILTER_FULL,
+      type: C.SET_LOWPASSFILTER_FULL,
       full: true
     }
     deepFreeze(action)
-    expect(highpassfilter(state, action)).toEqual({
+    expect(lowpassfilter(state, action)).toEqual({
       cutoff: 0,
       resonance: 0,
       envAmount: 0,

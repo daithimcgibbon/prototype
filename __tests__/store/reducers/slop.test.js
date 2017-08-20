@@ -1,5 +1,5 @@
-import C from '../../../../src/constants'
-import { slop } from '../../../../src/store/reducers'
+import C from '../../../src/constants'
+import { slop } from '../../../src/store/reducers'
 import deepFreeze from 'deep-freeze'
 
 const state = 0

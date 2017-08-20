@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setMixerOsc1, setMixerOsc2, setMixerSubOctave, setMixerNoise } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setMixerOsc1, setMixerOsc2, setMixerSubOctave, setMixerNoise } from '../../../src/actions'
 
 describe("Mixer Action Creators", () => {
 

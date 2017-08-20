@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setOsc2Freq, setOsc2Fine, setOsc2Shape, setOsc2PulseWidth, setOsc2LowFreq, setOsc2Keyboard } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setOsc2Freq, setOsc2Fine, setOsc2Shape, setOsc2PulseWidth, setOsc2LowFreq, setOsc2Keyboard } from '../../../src/actions'
 
 describe("Osc2 Action Creators", () => {
 

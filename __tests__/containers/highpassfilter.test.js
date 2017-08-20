@@ -1,9 +1,9 @@
 import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
-import HighPassFilterContainer from '../../../../src/containers/HighPassFilterContainer'
-import Cutoff from '../../../../src/components/filters/Cutoff'
-import { setHighPassCutoff } from '../../../../src/actions'
-import C from '../../../../src/constants'
+import HighPassFilterContainer from '../../src/containers/HighPassFilterContainer'
+import Cutoff from '../../src/components/filters/Cutoff'
+import { setHighPassCutoff } from '../../src/actions'
+import C from '../../src/constants'
 
 const fakeStoreFactory = (state) => {
   return {

@@ -1,5 +1,5 @@
-import C from '../../../../src/constants'
-import { osc1 } from '../../../../src/store/reducers'
+import C from '../../../src/constants'
+import { osc1 } from '../../../src/store/reducers'
 import deepFreeze from 'deep-freeze'
 
 const state = {

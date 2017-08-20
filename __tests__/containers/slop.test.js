@@ -1,9 +1,9 @@
 import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
-import SlopContainer from '../../../../src/containers/SlopContainer'
-import Slop from '../../../../src/components/slop/Slop'
-import { setSlop } from '../../../../src/actions'
-import C from '../../../../src/constants'
+import SlopContainer from '../../src/containers/SlopContainer'
+import Slop from '../../src/components/slop/Slop'
+import { setSlop } from '../../src/actions'
+import C from '../../src/constants'
 
 const fakeStoreFactory = (state) => {
   return {

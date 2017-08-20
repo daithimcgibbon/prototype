@@ -1,5 +1,5 @@
 import { shallow, mount } from 'enzyme'
-import Keyboard from '../../../../src/components/oscillators/Keyboard'
+import Keyboard from '../../../src/components/oscillators/Keyboard'
 
 describe("Keyboard", () => {
 

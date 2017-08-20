@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setOsc1Freq, setOsc1Sync, setOsc1Shape, setOSc1PulseWidth } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setOsc1Freq, setOsc1Sync, setOsc1Shape, setOSc1PulseWidth } from '../../../src/actions'
 
 describe("Osc1 Action Creators", () => {
 

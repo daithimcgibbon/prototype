@@ -1,6 +1,6 @@
-import C from '../../../../src/constants'
-import storeFactory from '../../../../src/store'
-import { setHighPassCutoff, setHighPassResonance, setHighPassEnvAmount, setHighPassVelocity, setHighPassKeyboard, setHighPassHalf, setHighPassFull } from '../../../../src/actions'
+import C from '../../../src/constants'
+import storeFactory from '../../../src/store'
+import { setHighPassCutoff, setHighPassResonance, setHighPassEnvAmount, setHighPassVelocity, setHighPassKeyboard, setHighPassHalf, setHighPassFull } from '../../../src/actions'
 
 describe("High Pass Filter Action Creators", () => {
 
