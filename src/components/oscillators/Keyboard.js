@@ -6,7 +6,7 @@ const Keyboard = ({keyboard, onSetKeyboard}) => {
   return (
     <div>
       <input defaultValue={keyboard} ref={(input) => _keyboard = input} />
-      <button onClick={() => onSetKeyboard(_keyboard.value === 'true')}>Set Keyboard</button>
+      <button id='#setKeyboardButton'onClick={() => onSetKeyboard(_keyboard.value === 'true')}>Set Keyboard</button>
     </div>
   )
 }

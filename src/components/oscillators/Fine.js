@@ -6,7 +6,7 @@ const Fine = ({fine, onSetFine}) => {
   return (
     <div>
       <input defaultValue={fine} ref={(input) => _fine = input} />
-      <button onClick={() => onSetFine(parseInt(_fine.value))}>Set Fine</button>
+      <button id='#setFineButton' onClick={() => onSetFine(parseInt(_fine.value))}>Set Fine</button>
     </div>
   )
 }

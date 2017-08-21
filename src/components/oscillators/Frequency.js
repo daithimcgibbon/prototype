@@ -6,7 +6,7 @@ const Frequency = ({frequency, onSetFrequency}) => {
   return (
     <div>
       <input defaultValue={frequency} ref={ (input) => _frequency = input}/>
-      <button onClick={() => onSetFrequency(parseInt(_frequency.value))}>Set Frequency</button>
+      <button id='#setFrequencyButton' onClick={() => onSetFrequency(parseInt(_frequency.value))}>Set Frequency</button>
     </div>
   )
 }
