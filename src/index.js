@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Prophet6 from './Prophet6'
 import storeFactory from './store'
 import { Provider } from 'react-redux'
-import CanvasComponent from './components/temp/CanvasComponent'
+import Knob from './components/canvas/Knob'
 
 // const store = storeFactory()
 
@@ -15,6 +15,6 @@ import CanvasComponent from './components/temp/CanvasComponent'
 // )
 
 ReactDOM.render(
-  <CanvasComponent />,
+  <Knob />,
   document.getElementById( 'app' )
 )
