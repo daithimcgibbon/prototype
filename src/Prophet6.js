@@ -9,8 +9,12 @@ import LowPassFilterContainer from './containers/LowPassFilterContainer'
 import SaveButtonContainer from './containers/SaveButtonContainer'
 
 export default () => (
-  <div>
-    <Osc1Container />
-    <PatchSummaryContainer />
+  <div className="container">
+    <div className="row">
+      <div className="col-md-5">
+        <Osc1Container />
+      </div>
+      <PatchSummaryContainer />
+    </div>
   </div>
 )

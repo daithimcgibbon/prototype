@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "babel-preset-env": "^1.6.0",
+    "bootstrap": "^4.0.0",
     "css-loader": "^0.28.4",
     "react": "^15.6.1",
     "react-canvas-uiknob": "^1.0.2",
